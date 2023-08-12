@@ -10,6 +10,7 @@ const port = process.env.PORT || 3000
 const app = express();
 
 //Middlewares
+require('dotenv').config();
 app.use(morgan('tiny'))
 app.use(cors())
 app.use(express.json())
